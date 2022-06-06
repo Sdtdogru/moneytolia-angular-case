@@ -1,0 +1,9 @@
+<div class="compaign-container">
+    <form #f="ngForm" (ngSubmit)="save(f)">
+    <input type="text" class="common name-input" name="name" id="name"  placeholder="Kampanya Adını Giriniz"  ngModel="{{name}}">
+    <br>
+    <textarea class="common text-area" id="statement" name="statement" rows="8"  ngModel="{{statement}}">a</textarea>
+    <br>
+    <input class="common save-button" type="submit" value="Kaydet">
+</form>
+</div>

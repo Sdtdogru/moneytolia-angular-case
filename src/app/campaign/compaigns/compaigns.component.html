@@ -1,0 +1,58 @@
+<div class="listcontainer">
+  <div class="search">
+    <div class="search-row"> 
+
+      <button type="button" class="search-button" (click)="handleInput()" ><i class="fa fa-search"></i></button>
+      <input type="text" class="search-input" name="searchtext" id="search"
+        placeholder="Lütfen Kampanya Adını Giriniz..."  value="{{searchText}}"  [(ngModel)]="searchText">
+     
+      </div>
+    
+    <div class="item-div" (change)="onChange($event)">
+      <select class="items" >
+        <option default>Sırala</option>
+        <option value="1" >Yüksek Puan</option>
+        <option value="2">Düşük Puan</option>
+      </select>
+    </div>
+  </div>
+  <div class="list" >
+    <div class="compaign"  *ngFor="let a of compaigns;  let index = index">
+      <div class="skor">
+        <div class="skor-number">
+          {{a.skor}}
+        </div>
+        <div class="skor-text">
+          Puan 
+        </div>
+      </div>
+      <div class="compaign-right">
+        <div class="compaign-top">
+        <a style=" font-weight: bold;font-size: 40px;"> {{a.name}}</a><br>
+        <a style=" font-size: 25px;margin-left: 6px;"> {{a.statement}}</a>
+        </div>
+        <div class="compaign-bottom">
+          <button class="button button1" (click)="positive(index)">+</button>
+          <button class="button button1"  (click)="negative(index,a.skor)">-</button>
+          <button class="button button2" (click)="delete(index)">Sil</button>
+          <button class="button button2" (click)="show(index)">Güncelle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="update-container" id="container-show" [style.visibility]="typ">
+    <div class="form">
+    <form  #f="ngForm" (ngSubmit)="update(f)">
+      <input type="text" class="common name-input" name="name" id="name"  placeholder="Kampanya Adını Giriniz"  ngModel="{{name}}">
+      <br>
+      <textarea class="common text-area" id="statement" name="statement" rows="8"   ngModel="{{statement}}">
+      </textarea>
+      <br>
+      <input class="common update-button" type="submit" value="Güncelle">
+  </form>
+</div>
+<div class="esc">
+  <input  type="button" (click)="esc()" value="X">
+</div>
+  </div>
+</div>

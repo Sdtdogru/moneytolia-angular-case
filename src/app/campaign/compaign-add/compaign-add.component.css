@@ -1,0 +1,19 @@
+.compaign-container{
+    height:70%;
+    width:40%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.text-area{
+border:outset 2px black;
+}
+.name-input{
+    height: 20px;
+}
+.common{
+    width: 95%;
+    margin-bottom: 10px;
+    border-style: ridge;
+    z-index: 3;
+}

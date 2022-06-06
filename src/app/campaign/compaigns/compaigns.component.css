@@ -1,0 +1,196 @@
+.listcontainer {
+    width: 65%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search {
+    width: 100%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-row {
+    width: 70%;
+    height: 60px;
+    float: left;
+}
+.search-button {
+    float: left;
+    width: 9%;
+    height: 60%;
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+    border: 2px solid black;
+    border-right: none;
+    cursor: pointer;
+    margin-top: 12px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: white;
+  }
+.search .search-input {
+    width: 70%;
+    height: 50%;
+    margin-top: 12px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+    
+}
+.search .search-input:hover {
+    border: 2px solid black;
+}
+.search .search-input::after {
+    border: 2px solid black;
+}
+.search .search-input::before {
+    border: 2px solid black;
+}
+
+.item-div {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.items {
+    margin-top: 12px;
+    width: 50%;
+    height: 50%;
+
+}
+
+.list {
+    width: 100%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.compaign {
+    margin: 3px;
+    width: 95%;
+    height: 160px;
+    border-style: solid;
+
+}
+
+.skor {
+    width: 25%;
+    height: 100%;
+    border-right: 3px solid black;
+    float: left;
+}
+
+.skor-number {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 3px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.skor-text {
+    width: 100%;
+    height: 40%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.compaign-right {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.compaign-top {
+    width: 100%;
+    height: 60%;
+}
+
+.compaign-bottom {
+    width: 100%;
+    height: 40%;
+}
+
+.button {
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.button1 {
+    border-radius: 50%;
+}
+
+.button2 {
+    float: right;
+    margin-left: 7px;
+
+}
+
+.update-container {
+    position: absolute;
+    top: 60px;
+    width: 50%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.form {
+    float: left;
+    text-align: right;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.text-area {
+    border: outset 2px black;
+}
+
+.name-input {
+    height: 20px;
+}
+
+.common {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: ridge;
+
+}
+.esc{
+    float: right;
+    text-align: right;
+    width: 30%;
+    height: 40%;
+}
+
+.esc input{
+    margin: 10px;
+    color: red;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+ .update-button:hover {
+    background-color: #7F7F7F;
+  }
+
+  .esc input:hover{
+    background: rgba(0, 0, 0, 0.9);
+}

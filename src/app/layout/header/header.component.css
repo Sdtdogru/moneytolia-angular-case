@@ -1,0 +1,21 @@
+ .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+ .section .top_navbar{
+	height: 100px;
+	display: flex;
+	padding: 0px;
+ 
+}
+.section .top_navbar .line{
+  width: 100%;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+.line h2{
+	font-size: 80px;
+	margin-top: 0;
+}

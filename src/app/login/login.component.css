@@ -1,0 +1,32 @@
+
+.login{  
+        width: 360px;  
+        overflow: hidden;  
+        margin: auto;   
+        margin-top:10em ;
+        padding: 80px;  
+        border-radius: 15px ;  
+          
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;    
+    border-style: outset;
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;    
+    border-style: outset;
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 315px;  
+    height: 30px;  
+    border-style: outset;
+    padding-left: 8px;  
+  
+  
+}  
+ 
